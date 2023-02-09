@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".supervisingOnSiteActivity">
+
+    <Button
+        android:id="@+id/btnCategPre_planFieldOnSite"
+        android:layout_width="405dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="456dp"
+        android:backgroundTint="@color/purple_200"
+        android:text="Pre-Planning 360 Staff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCategPostProjectOnSite" />
+
+    <Button
+        android:id="@+id/btnCategPostProjectOnSite"
+        android:layout_width="405dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:text="Post Project"
+        app:layout_constraintBottom_toTopOf="@+id/btnCategPre_planFieldOnSite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCategThroughoutOnSite" />
+
+    <Button
+        android:id="@+id/btnCategThroughoutOnSite"
+        android:layout_width="405dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:backgroundTint="@color/purple_200"
+        android:text="Throughout Project"
+        app:layout_constraintBottom_toTopOf="@+id/btnCategPostProjectOnSite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCategFirstDayOnSite" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="81dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="115dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCategFirstDayOnSite"
+        app:layout_constraintEnd_toStartOf="@+id/imageView10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="53dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCategFirstDayOnSite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/user_64" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="239dp"
+        android:layout_marginEnd="177dp"
+        android:text="Supervising On Site"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnCategFirstDayOnSite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCategFirstDayOnSite"
+        android:layout_width="405dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="@color/purple_700"
+        android:text="First Day On Site"
+        app:layout_constraintBottom_toTopOf="@+id/btnCategThroughoutOnSite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <Button
+        android:id="@+id/btnPrePlannigOnSite"
+        android:layout_width="409dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="117dp"
+        android:backgroundTint="@color/purple_700"
+        android:text="Pre-Planning Field Level"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCategPre_planFieldOnSite" />
+
+    <Button
+        android:id="@+id/button37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="53dp"
+        android:text="Back"
+        app:icon="?attr/actionModeCloseDrawable"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPrePlannigOnSite" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
