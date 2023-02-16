@@ -58,6 +58,19 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
+                <TextView
+                    android:id="@+id/textView_BasicInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:text="Section 0 - Basic Info"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
                 <LinearLayout
                     android:id="@+id/Section0Content"
                     android:layout_width="match_parent"
@@ -81,7 +94,7 @@
                         <EditText
                             android:id="@+id/editText_Location"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
+                            android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:ems="10"
                             android:inputType="textCapSentences" />
@@ -217,6 +230,7 @@
                     android:id="@+id/textView_Scope"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:clickable="true"
                     android:paddingTop="16dp"
                     android:paddingBottom="16dp"
                     android:text="Section A - Scope"
@@ -245,47 +259,67 @@
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
-                        <CheckBox
-                            android:id="@+id/checkBox_ColdWork"
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="Cold Work" />
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
 
-                        <CheckBox
-                            android:id="@+id/checkBox_Explosive"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="Explosive/Radioactive" />
+                            <CheckBox
+                                android:id="@+id/checkBox_Explosive"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Explosive/Radioactive" />
 
-                        <CheckBox
-                            android:id="@+id/checkBox_Pressure"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="Pressure Systems" />
+                            <CheckBox
+                                android:id="@+id/checkBox_ColdWork"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Cold Work" />
+                        </LinearLayout>
 
-                        <CheckBox
-                            android:id="@+id/checkBox_Electrical"
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:text="Electrical Work" />
+                            android:orientation="horizontal">
 
-                        <CheckBox
-                            android:id="@+id/checkBox_HotWork"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="Hot Work" />
+                            <CheckBox
+                                android:id="@+id/checkBox_Electrical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Electrical Work" />
 
-                        <CheckBox
-                            android:id="@+id/checkBox_Heights"
+                            <CheckBox
+                                android:id="@+id/checkBox_Pressure"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Pressure Systems" />
+                        </LinearLayout>
+
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:text="Working at Heights" />
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/checkBox_Heights"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Working at Heights" />
+
+                            <CheckBox
+                                android:id="@+id/checkBox_HotWork"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Hot Work" />
+                        </LinearLayout>
 
                         <CheckBox
                             android:id="@+id/checkBox_Confined"
@@ -322,7 +356,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:ems="10" />
+                            android:ems="10"
+                            android:inputType="textMultiLine"
+                            />
                     </LinearLayout>
 
                     <LinearLayout
@@ -335,17 +371,17 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Tools/Equipment to be User"
+                            android:text="Tools/Equipment to be Used"
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
                         <EditText
-                            android:id="@+id/editText_Supervisor"
+                            android:id="@+id/editText_ToolsEquipment"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:ems="10"
-                             />
+                            android:inputType="textMultiLine" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -354,11 +390,11 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView_CompanyReceiver"
+                            android:id="@+id/textView_AssociatedDocuments"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:text="Company Permit Receiver Name"
+                            android:text="Associated Documents(List or Attach)"
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
@@ -368,7 +404,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:ems="10"
-                            android:inputType="textPersonName" />
+                            android:inputType="textMultiLine" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -377,16 +413,25 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView_Receiver"
+                            android:id="@+id/textView_PrecautionsVerifier"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Permit Receiver"
+                            android:text="Work Precautions Verifier (Name and Company)"
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
+                        <TextView
+                            android:id="@+id/textView_PrecautionsVerifierClarifier"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="If not Wellsite Permit Authority, list name/role/company"
+                            android:textSize="14sp"
+                            android:textStyle="italic" />
+
                         <EditText
-                            android:id="@+id/editText_Receiver"
+                            android:id="@+id/editText_PrecautionsVerifier"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -400,21 +445,45 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView_Issuer"
+                            android:id="@+id/textView_WorkPartyAcceptance"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Permit Issuer"
+                            android:text="Work Party Acceptance"
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
-                        <EditText
-                            android:id="@+id/editText_Issuer"
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:ems="10"
-                            android:inputType="textPersonName" />
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:hint="Name"
+                                android:inputType="textPersonName" />
+
+                            <EditText
+                                android:id="@+id/editText_Time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:hint="Time"
+                                android:inputType="time" />
+
+                            <Button
+                                android:id="@+id/btn_AddWorker"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="+" />
+                        </LinearLayout>
+
                     </LinearLayout>
 
 
