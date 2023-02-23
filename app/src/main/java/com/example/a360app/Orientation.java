@@ -6,17 +6,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class FirstDay_SupervisingOS_Activity extends AppCompatActivity {
+public class Orientation extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_first_day_supervising_os);
+        setContentView(R.layout.activity_orientation);
     }
 
-    public void goToOrientation(View view)
+    public void goToOrientationNext(View view)
     {
-        Intent btnGoToOrientation = new Intent(this,Orientation.class);
-        startActivity(btnGoToOrientation);
+        Intent btnGoToOrientationNext = new Intent(this,Orientation_next.class);
+        startActivity(btnGoToOrientationNext);
     }
 }

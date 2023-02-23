@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Vehicle_PreTrip_Inspection_Internal_next">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_SOSKit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SOS Kit"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup_SOSKit"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioBtn_SOSKitSatisfactory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SATISFACTORY"
+                android:onClick="onRadioButtonClicked"/>
+
+            <RadioButton
+                android:id="@+id/radioBtn_SOSKitDefective"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="DEFECTIVE"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editText_SOSKitComments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textView_FirstAidKit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="First Aid Kit"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup_FirstAidKit"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioBtn_FirstAidKitSatisfactory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onRadioButtonClicked"
+                android:text="SATISFACTORY" />
+
+            <RadioButton
+                android:id="@+id/radioBtn_FirstAidKitDefective"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onRadioButtonClicked"
+                android:text="DEFECTIVE" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editText_FirstAidKitComments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textView_SpillKit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Spill Kit"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup_SpillKit"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioBtn_SpillKitSatisfactory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onRadioButtonClicked"
+                android:text="SATISFACTORY" />
+
+            <RadioButton
+                android:id="@+id/radioBtn_SpillKitDefective"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onRadioButtonClicked"
+                android:text="DEFECTIVE" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editText_SpillKitComments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textView_FireExtinguisher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fire Extinguisher"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup_FireExtinguisher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioBtn_FireExtinguisherSatisfactory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onRadioButtonClicked"
+                android:text="SATISFACTORY" />
+
+            <RadioButton
+                android:id="@+id/radioBtn_FireExtinguisherDefective"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onRadioButtonClicked"
+                android:text="DEFECTIVE" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editText_FireExtinguisherComments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/imageBtn_Move6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:minWidth="111dp"
+            android:minHeight="51dp"
+            android:src="@drawable/ic_action_next" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

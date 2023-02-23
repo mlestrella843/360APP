@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Orientation">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:layout_width="107dp"
+            android:layout_height="79dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="0"
+            app:srcCompat="@mipmap/logo" />
+
+        <TextView
+            android:id="@+id/textView_ACKNOWLEDGEMENT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="ACKNOWLEDGEMENT"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:textColor="#3F51B5"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="I confirm that I have received 360’s HSE orientation and
+understand the HSE standards of 360. I will participate in
+actively identifying unsafe situations."
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="I understand that if I have any questions, or concerns
+relating to this Orientation they are to be directed to the
+360 Site Supervisor."
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="I acknowledge that I am in possession of the required
+current training tickets and certifications, for both my
+person and the equipment that I intend to use. I will have
+my training certificates on my person, and equipment
+certifications available when working on a 360 location"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/imageBtn_OrientationNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:minWidth="111dp"
+            android:onClick="goToOrientationNext"
+            android:minHeight="51dp"
+            android:src="@drawable/ic_action_next" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity_PreTrip_Inspection">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editTxtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Date"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/editTxtNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="32dp"
+        android:hint="Vehicle Unit Number"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTxtPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="32dp"
+        android:hint="Driver Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTxtKM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="32dp"
+        android:hint="Current KM Reading"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTxtOilChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Last Oil Change"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTxtOilDue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Oil Change Due"
+        android:inputType="number" />
+
+    <ImageButton
+        android:id="@+id/imgButtonNext"
+        android:layout_width="111dp"
+        android:layout_height="51dp"
+        android:onClick="move"
+        android:layout_gravity="bottom|right"
+        app:srcCompat="@drawable/ic_action_next" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:layout_height="match_parent"
+    tools:context=".Vehicle_PreTrip_Inspection_Next_Next">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_BrakeLights"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Brake Lights"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup_BrakeLights"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioBtn_BrakeLightsSatisfactory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onRadioButtonClicked"
+                android:text="SATISFACTORY" />
+
+            <RadioButton
+                android:id="@+id/radioBtn_BrakeLightsDefective"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:layout_weight="1"
+                android:text="DEFECTIVE" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editText_BrakeLightsComments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textView_SignalLights"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Signal Lights"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup_SignalLights"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioBtn_SignalLightsSatisfactory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:layout_weight="1"
+                android:text="SATISFACTORY" />
+
+            <RadioButton
+                android:id="@+id/radioBtn_SignalLightsDefective"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:layout_weight="1"
+                android:text="DEFECTIVE" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editText_SignalLightsComments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textView_Internal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Internal"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_DashLights"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dash Lights"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup_DashLights"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioBtn_DashLightsSatisfactory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SATISFACTORY"
+                android:onClick="onRadioButtonClicked"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:id="@+id/radioBtn_DashLightsDefective"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onRadioButtonClicked"
+                android:text="RadioButton" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editText_DashLightsComments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textView_Gauges"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gauges"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup_Gauges"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioBtn_GaugesSatisfactory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onRadioButtonClicked"
+                android:text="SATISFACTORY" />
+
+            <RadioButton
+                android:id="@+id/radioBtn_GaugesDefective"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onRadioButtonClicked"
+                android:text="DEFECTIVE"/>
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editText_GaugesComments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/imageBtn_Move4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="111dp"
+            android:minHeight="51dp"
+            android:layout_gravity="bottom|right"
+            android:src="@drawable/ic_action_next"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
