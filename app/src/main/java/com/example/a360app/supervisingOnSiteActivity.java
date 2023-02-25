@@ -19,4 +19,18 @@ public class supervisingOnSiteActivity extends AppCompatActivity {
         Intent btnGoToFirstDaySupervising = new Intent(this,FirstDay_SupervisingOS_Activity.class);
         startActivity(btnGoToFirstDaySupervising);
     }
+
+    public void goToTroughProjectSupervising(View view)
+    {
+        Intent btnGoToTroughProjectSupervising = new Intent(this,ThroughOut_SupervisingOS_Activity.class);
+        startActivity(btnGoToTroughProjectSupervising);
+    }
+
+    public void goToPostProjectSupervising(View view)
+    {
+        Intent btnGoToPostProjectSupervising = new Intent(this,PostProject_SuervisingOS_Activity.class);
+        startActivity(btnGoToPostProjectSupervising);
+    }
+
+
 }

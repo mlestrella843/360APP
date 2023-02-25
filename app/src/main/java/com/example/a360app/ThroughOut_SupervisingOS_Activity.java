@@ -2,7 +2,9 @@ package com.example.a360app;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class ThroughOut_SupervisingOS_Activity extends AppCompatActivity {
 
@@ -11,4 +13,7 @@ public class ThroughOut_SupervisingOS_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_through_out_supervising_os);
     }
+
+
+
 }
