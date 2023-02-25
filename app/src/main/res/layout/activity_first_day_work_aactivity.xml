@@ -7,32 +7,38 @@
     tools:context=".FirstDay_WorkA_Activity">
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/imgViewFDOS_WAllone"
         android:layout_width="132dp"
         android:layout_height="92dp"
-        app:srcCompat="@mipmap/logo"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="87dp" />
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="51dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtFDOS_WAlone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/txtFDOS_WAlone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="151dp"
         android:layout_marginTop="223dp"
         android:layout_marginEnd="157dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="20dp"
         android:text="First Day On Site (Working Alone)"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/btnFieldLevel_FDOS_WA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnFieldLevel_FDOS_WA"
         android:layout_width="405dp"
         android:layout_height="65dp"
         android:layout_marginStart="5dp"
@@ -41,13 +47,13 @@
         android:layout_marginBottom="1dp"
         android:backgroundTint="@color/purple_700"
         android:text="Field Level Hazard Assesment-FLHA"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintBottom_toTopOf="@+id/btnGasMonitorBump_FDOS_WA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/txtFDOS_WAlone" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnGasMonitorBump_FDOS_WA"
         android:layout_width="404dp"
         android:layout_height="64dp"
         android:layout_marginStart="3dp"
@@ -56,13 +62,13 @@
         android:layout_marginBottom="5dp"
         android:backgroundTint="@color/purple_700"
         android:text="Gas Monitor Bump Test"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintBottom_toTopOf="@+id/btn_ATV_OHV_Inspection"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/btnFieldLevel_FDOS_WA" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btn_ATV_OHV_Inspection"
         android:layout_width="404dp"
         android:layout_height="64dp"
         android:layout_marginStart="3dp"
@@ -71,13 +77,13 @@
         android:layout_marginBottom="40dp"
         android:backgroundTint="@color/purple_700"
         android:text="ATV/OHV Inspection"
-        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintBottom_toTopOf="@+id/btnBack1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/btnGasMonitorBump_FDOS_WA" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/btnBack1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="162dp"
@@ -89,23 +95,23 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_ATV_OHV_Inspection" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/txtFDOS_WAlone1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="172dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="193dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="10dp"
         android:text="Forms"
         android:textColor="@color/black"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/btnFieldLevel_FDOS_WA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/txtFDOS_WAlone" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

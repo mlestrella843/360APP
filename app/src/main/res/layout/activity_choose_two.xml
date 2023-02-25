@@ -20,7 +20,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btnWorkingAlone" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/imgViewChooseTwo"
         android:layout_width="110dp"
         android:layout_height="88dp"
         android:layout_marginStart="69dp"
@@ -28,13 +28,13 @@
         android:layout_marginEnd="78dp"
         android:layout_marginBottom="105dp"
         app:layout_constraintBottom_toTopOf="@+id/txtWelcomeUser"
-        app:layout_constraintEnd_toStartOf="@+id/imageView8"
+        app:layout_constraintEnd_toStartOf="@+id/imgUserWelcome"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/logo" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/imgUserWelcome"
         android:layout_width="109dp"
         android:layout_height="98dp"
         android:layout_marginStart="40dp"
@@ -44,7 +44,7 @@
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/textUser1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintStart_toEndOf="@+id/imgViewChooseTwo"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/user_64"
         tools:srcCompat="@mipmap/user" />
@@ -61,7 +61,7 @@
         app:layout_constraintBottom_toTopOf="@+id/btnWorkingAlone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+        app:layout_constraintTop_toBottomOf="@+id/imgUserWelcome" />
 
     <Button
         android:id="@+id/btnWorkingAlone"
@@ -92,5 +92,5 @@
         app:layout_constraintBottom_toTopOf="@+id/btnWorkingAlone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+        app:layout_constraintTop_toBottomOf="@+id/imgUserWelcome" />
 </androidx.constraintlayout.widget.ConstraintLayout>
