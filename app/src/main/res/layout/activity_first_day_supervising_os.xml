@@ -18,25 +18,24 @@
         android:paddingVertical="60dp">
 
         <ImageView
-            android:id="@+id/imageView15"
+            android:id="@+id/imgViewFDOS_Supervising"
             android:layout_width="132dp"
             android:layout_height="92dp"
             app:srcCompat="@mipmap/logo" />
 
         <TextView
-            android:id="@+id/textView12"
+            android:id="@+id/txtFDOS_Supervising"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
-            android:layout_marginTop="20dp
-"
+            android:layout_marginTop="20dp"
             android:textAlignment="center"
             android:text="First Day On SIte (Supervising)"
             android:textSize="24sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView15"
+            android:id="@+id/txt_FDOS_Supervising1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
@@ -47,7 +46,7 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/button11"
+            android:id="@+id/btnOtientation_FDOS_Sup"
             android:layout_width="406dp"
             android:layout_height="62dp"
             android:layout_marginStart="4dp"
@@ -57,14 +56,14 @@
             android:backgroundTint="@color/purple_200"
             android:onClick="goToOrientation"
             android:text="Orientation to 3erd Party Contractors"
-            app:layout_constraintBottom_toTopOf="@+id/button12"
+            app:layout_constraintBottom_toTopOf="@+id/btnSafeworkAgreement_Sup"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
         <Button
-            android:id="@+id/button12"
+            android:id="@+id/btnSafeworkAgreement_Sup"
             android:layout_width="404dp"
             android:layout_height="66dp"
             android:layout_marginStart="4dp"
@@ -77,10 +76,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button11" />
+            app:layout_constraintTop_toBottomOf="@+id/btnOtientation_FDOS_Sup" />
 
         <Button
-            android:id="@+id/button14"
+            android:id="@+id/btnSafeMeetings_Suo"
             android:layout_width="match_parent"
             android:layout_height="66dp"
             android:layout_marginStart="4dp"
@@ -93,10 +92,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button11" />
+            app:layout_constraintTop_toBottomOf="@+id/btnOtientation_FDOS_Sup" />
 
         <Button
-            android:id="@+id/button15"
+            android:id="@+id/btnGasMonitorBump_Sup"
             android:layout_width="match_parent"
             android:layout_height="66dp"
             android:layout_marginStart="4dp"
@@ -109,10 +108,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button11" />
+            app:layout_constraintTop_toBottomOf="@+id/btnOtientation_FDOS_Sup" />
 
         <Button
-            android:id="@+id/button16"
+            android:id="@+id/btnSignSheet_Sup"
             android:layout_width="match_parent"
             android:layout_height="66dp"
             android:layout_marginStart="4dp"
@@ -125,10 +124,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button11" />
+            app:layout_constraintTop_toBottomOf="@+id/btnOtientation_FDOS_Sup" />
 
         <Button
-            android:id="@+id/button17"
+            android:id="@+id/btnFieldLevelHazard_Sup"
             android:layout_width="match_parent"
             android:layout_height="62dp"
             android:layout_marginStart="4dp"
@@ -137,14 +136,14 @@
             android:layout_marginBottom="15dp"
             android:backgroundTint="@color/purple_200"
             android:text="Field Level Hazard Assesments"
-            app:layout_constraintBottom_toTopOf="@+id/button12"
+            app:layout_constraintBottom_toTopOf="@+id/btnSafeworkAgreement_Sup"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
         <Button
-            android:id="@+id/button18"
+            android:id="@+id/btnGroundDisturb_Sup"
             android:layout_width="match_parent"
             android:layout_height="62dp"
             android:layout_marginStart="4dp"
@@ -153,14 +152,14 @@
             android:layout_marginBottom="15dp"
             android:backgroundTint="@color/purple_200"
             android:text="Ground Disturbance"
-            app:layout_constraintBottom_toTopOf="@+id/button12"
+            app:layout_constraintBottom_toTopOf="@+id/btnSafeworkAgreement_Sup"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
         <Button
-            android:id="@+id/button20"
+            android:id="@+id/btnConfinedSpace_Sup"
             android:layout_width="match_parent"
             android:layout_height="62dp"
             android:layout_marginStart="4dp"
@@ -169,14 +168,14 @@
             android:layout_marginBottom="15dp"
             android:backgroundTint="@color/purple_200"
             android:text="Confined Space Permit"
-            app:layout_constraintBottom_toTopOf="@+id/button12"
+            app:layout_constraintBottom_toTopOf="@+id/btnSafeworkAgreement_Sup"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView3"/>
 
         <Button
-            android:id="@+id/button21"
+            android:id="@+id/btnATV_OH_Sup"
             android:layout_width="match_parent"
             android:layout_height="62dp"
             android:layout_marginStart="4dp"
@@ -185,7 +184,7 @@
             android:layout_marginBottom="15dp"
             android:backgroundTint="@color/purple_200"
             android:text="ATV/OHV Inspection"
-            app:layout_constraintBottom_toTopOf="@+id/button12"
+            app:layout_constraintBottom_toTopOf="@+id/btnSafeworkAgreement_Sup"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"

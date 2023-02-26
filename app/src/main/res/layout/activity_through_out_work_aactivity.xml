@@ -7,15 +7,22 @@
     tools:context=".ThroughOut_WorkA_Activity">
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/imgViewThroughProject_WA"
         android:layout_width="132dp"
         android:layout_height="92dp"
-        app:srcCompat="@mipmap/logo"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="84dp" />
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="67dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtThroughP_WA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/txtThroughP_WA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="176dp"
@@ -26,13 +33,13 @@
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/btnHazardIdentif_WA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnHazardIdentif_WA"
         android:layout_width="406dp"
         android:layout_height="64dp"
         android:layout_marginStart="2dp"
@@ -41,26 +48,26 @@
         android:layout_marginBottom="10dp"
         android:text="Hazard Identification Cards"
         android:backgroundTint="@color/purple_200"
-        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintBottom_toTopOf="@+id/btnIncidentReports_WA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/txtThroughP_WA" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/btnIncidentReports_WA"
         android:layout_width="413dp"
         android:layout_height="71dp"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="50dp"
         android:text="Incident Reports"
         android:backgroundTint="@color/purple_200"
-        app:layout_constraintBottom_toTopOf="@+id/button8"
+        app:layout_constraintBottom_toTopOf="@+id/btnBack3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/btnHazardIdentif_WA" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/btnBack3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="162dp"
@@ -72,10 +79,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button6" />
+        app:layout_constraintTop_toBottomOf="@+id/btnIncidentReports_WA" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/txtThroughP_WA1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="181dp"
@@ -87,8 +94,8 @@
         android:text="Forms"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/btnHazardIdentif_WA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/txtThroughP_WA" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,6 +4,100 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PostProject_SuervisingOS_Activity">
+    tools:context=".FirstDay_WorkA_Activity">
+
+    <ImageView
+        android:id="@+id/imgViewFDOS_WAllone"
+        android:layout_width="132dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="51dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtFDOS_WAlone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo" />
+
+    <TextView
+        android:id="@+id/txtFDOS_WAlone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="223dp"
+        android:layout_marginEnd="157dp"
+        android:layout_marginBottom="20dp"
+        android:text="Post Project (Supervising)"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnFieldLevel_FDOS_WA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnFieldLevel_FDOS_WA"
+        android:layout_width="405dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/purple_700"
+        android:text="Working Alone/ Journey Management Plan"
+        app:layout_constraintBottom_toTopOf="@+id/btnGasMonitorBump_FDOS_WA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFDOS_WAlone" />
+
+    <Button
+        android:id="@+id/btnGasMonitorBump_FDOS_WA"
+        android:layout_width="404dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="@color/purple_700"
+        android:text="Pre-Trip Inspection"
+        android:onClick="goToPreTripInspection"
+        app:layout_constraintBottom_toTopOf="@+id/btnBack1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFieldLevel_FDOS_WA" />
+
+    <Button
+        android:id="@+id/btnBack1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="150dp"
+        android:text="Back"
+        app:icon="?attr/actionModeCloseDrawable"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGasMonitorBump_FDOS_WA" />
+
+    <TextView
+        android:id="@+id/txtFDOS_WAlone1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="193dp"
+        android:layout_marginBottom="10dp"
+        android:text="Forms"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnFieldLevel_FDOS_WA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFDOS_WAlone" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

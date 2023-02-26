@@ -12,6 +12,33 @@
         android:theme="@style/Theme.360APP"
         tools:targetApi="31">
         <activity
+            android:name=".PreTrip_Inspection_Main"
+            android:exported="false" />
+        <activity
+            android:name=".Vehicle_PreTrip_Inspection"
+            android:exported="false" />
+        <activity
+            android:name=".Vehicle_PreTrip_Inspection_Internal"
+            android:exported="false" />
+        <activity
+            android:name=".Vehicle_PreTrip_Inspection_Internal_next"
+            android:exported="false" />
+        <activity
+            android:name=".Vehicle_PreTrip_Inspection_next"
+            android:exported="false" />
+        <activity
+            android:name=".Vehicle_PreTrip_Inspection_Next_Next"
+            android:exported="false" />
+        <activity
+            android:name=".Daily_Driver_Assessment"
+            android:exported="false" />
+        <activity
+            android:name=".DailyDriverAssessmentNext"
+            android:exported="false" />
+        <activity
+            android:name=".DailyDriverAssessmentNextNext"
+            android:exported="false" />
+        <activity
             android:name=".Orientation_next_next_next"
             android:exported="false" />
         <activity
@@ -56,6 +83,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

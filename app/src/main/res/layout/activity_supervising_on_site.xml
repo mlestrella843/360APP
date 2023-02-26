@@ -12,7 +12,10 @@
         android:layout_height="69dp"
         android:layout_marginStart="3dp"
         android:layout_marginEnd="3dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="goToPostProjectSupervising"
         android:text="Post Project"
+        app:layout_constraintBottom_toTopOf="@+id/button37"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCategThroughoutOnSite" />
@@ -24,6 +27,7 @@
         android:layout_marginStart="3dp"
         android:layout_marginEnd="3dp"
         android:backgroundTint="@color/purple_200"
+        android:onClick="goToTroughProjectSupervising"
         android:text="Throughout Project"
         app:layout_constraintBottom_toTopOf="@+id/btnCategPostProjectOnSite"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,37 +35,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCategFirstDayOnSite" />
 
+
     <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="81dp"
-        android:layout_height="74dp"
-        android:layout_marginStart="300dp"
+        android:id="@+id/imgViewSupervising"
+        android:layout_width="126dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="140dp"
         android:layout_marginTop="50dp"
-        android:layout_marginEnd="60dp"
         android:layout_marginBottom="115dp"
         app:layout_constraintBottom_toTopOf="@+id/btnCategFirstDayOnSite"
-        app:layout_constraintEnd_toStartOf="@+id/imageView10"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.454"
         app:srcCompat="@mipmap/logo" />
 
-
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="53dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="300dp"
-        android:layout_marginBottom="100dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnCategFirstDayOnSite"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView9"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/user_64" />
-
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/txtSupervising"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="176dp"
@@ -91,14 +80,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/txtSupervising" />
 
     <Button
         android:id="@+id/button37"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="164dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="159dp"
         android:layout_marginBottom="90dp"
         android:text="Back"

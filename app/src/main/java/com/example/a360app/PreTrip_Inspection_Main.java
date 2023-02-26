@@ -8,21 +8,21 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity_PreTrip_Inspection extends AppCompatActivity {
+public class PreTrip_Inspection_Main extends AppCompatActivity {
 
     private ImageButton move;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_pre_trip_inspection);
+        setContentView(R.layout.activity_pre_trip_inspection_main);
 
         move = findViewById(R.id.imgButtonNext);
 
         move.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity_PreTrip_Inspection.this, Vehicle_PreTrip_Inspection.class);
+                Intent intent = new Intent(PreTrip_Inspection_Main.this, Vehicle_PreTrip_Inspection.class);
                 startActivity(intent);
             }
         });
