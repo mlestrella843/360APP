@@ -14,6 +14,11 @@ public class ThroughOut_SupervisingOS_Activity extends AppCompatActivity {
         setContentView(R.layout.activity_through_out_supervising_os);
     }
 
+    public void goToGasMonitorForm(View view){
+        Intent btnGoToGasMonitorTesta = new Intent(this, GasMonitorBump_form.class);
+        startActivity(btnGoToGasMonitorTesta);
+    }
+
 
 
 }

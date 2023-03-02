@@ -61,6 +61,7 @@
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="5dp"
         android:backgroundTint="@color/purple_700"
+        android:onClick="goToGasMonitorForm"
         android:text="Gas Monitor Bump Test"
         app:layout_constraintBottom_toTopOf="@+id/btn_ATV_OHV_Inspection"
         app:layout_constraintEnd_toEndOf="parent"

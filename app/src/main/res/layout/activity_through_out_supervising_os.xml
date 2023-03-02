@@ -193,6 +193,7 @@
             android:layout_marginEnd="1dp"
             android:layout_marginBottom="15dp"
             android:backgroundTint="@color/purple_200"
+            android:onClick="goToGasMonitorForm"
             android:text="Gas Monitor Bump Test"
             app:layout_constraintBottom_toTopOf="@+id/btnSafeworkAgreement_Sup"
             app:layout_constraintEnd_toEndOf="parent"

@@ -14,6 +14,9 @@ public class FirstDay_WorkA_Activity extends AppCompatActivity {
         setContentView(R.layout.activity_first_day_work_aactivity);
     }
 
-
+    public void goToGasMonitorForm(View view){
+        Intent btnGoToGasMonitorTesta = new Intent(this, GasMonitorBump_form.class);
+        startActivity(btnGoToGasMonitorTesta);
+    }
 
 }
