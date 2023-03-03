@@ -32,5 +32,12 @@ public class supervisingOnSiteActivity extends AppCompatActivity {
         startActivity(btnGoToPostProjectSupervising);
     }
 
+    public void goBtnGoBackTwoSection(View view)
+    {
+        Intent btnGoBackTwoSection = new Intent(this,ChooseTwoActivity.class);
+        startActivity(btnGoBackTwoSection);
+    }
+
+
 
 }

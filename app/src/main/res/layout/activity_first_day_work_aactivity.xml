@@ -91,6 +91,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="161dp"
         android:layout_marginBottom="100dp"
+        android:onClick="goBtnGoBackWorkingAloneActivity"
         android:text="Back"
         app:icon="?attr/actionModeCloseDrawable"
         app:layout_constraintBottom_toBottomOf="parent"

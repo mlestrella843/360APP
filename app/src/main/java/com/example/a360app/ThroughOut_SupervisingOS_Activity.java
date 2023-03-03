@@ -19,6 +19,11 @@ public class ThroughOut_SupervisingOS_Activity extends AppCompatActivity {
         startActivity(btnGoToGasMonitorTesta);
     }
 
+    public void goBtnGoBackSupervisingActivity(View view)
+    {
+        Intent btnGoBackSupervisingActivity = new Intent(this,supervisingOnSiteActivity.class);
+        startActivity(btnGoBackSupervisingActivity);
+    }
 
 
 }

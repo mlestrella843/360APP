@@ -19,4 +19,10 @@ public class FirstDay_WorkA_Activity extends AppCompatActivity {
         startActivity(btnGoToGasMonitorTesta);
     }
 
+    public void goBtnGoBackWorkingAloneActivity(View view)
+    {
+        Intent btnGoBackWorkingAloneActivity = new Intent(this,workingAloneActivity.class);
+        startActivity(btnGoBackWorkingAloneActivity);
+    }
+
 }

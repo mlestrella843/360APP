@@ -191,6 +191,14 @@
             app:layout_constraintTop_toBottomOf="@+id/textView3"/>
 
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="goBtnGoBackSupervisingActivity"
+            android:text="Back"
+            app:icon="?attr/actionModeCloseDrawable" />
+
+
     </LinearLayout>
 
 </ScrollView>

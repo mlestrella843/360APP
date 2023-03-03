@@ -29,4 +29,13 @@ public class workingAloneActivity extends AppCompatActivity {
         startActivity(btnGoPostProjectWorkAlone);
     }
 
+    public void goBtnGoBackTwoSection(View view)
+    {
+        Intent btnGoBackTwoSection = new Intent(this,ChooseTwoActivity.class);
+        startActivity(btnGoBackTwoSection);
+    }
+
+
+
+
 }

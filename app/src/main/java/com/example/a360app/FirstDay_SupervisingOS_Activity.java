@@ -18,4 +18,9 @@ public class FirstDay_SupervisingOS_Activity extends AppCompatActivity {
         Intent btnGoToGasMonitorTesta = new Intent(this, GasMonitorBump_form.class);
         startActivity(btnGoToGasMonitorTesta);
     }
+    public void goBtnGoBackSupervisingActivity(View view)
+    {
+        Intent btnGoBackSupervisingActivity = new Intent(this,supervisingOnSiteActivity.class);
+        startActivity(btnGoBackSupervisingActivity);
+    }
 }

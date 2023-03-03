@@ -75,6 +75,7 @@
         android:layout_marginTop="5dp"
         android:layout_marginEnd="161dp"
         android:layout_marginBottom="150dp"
+        android:onClick="goBtnGoBackSupervisingActivity"
         android:text="Back"
         app:icon="?attr/actionModeCloseDrawable"
         app:layout_constraintBottom_toBottomOf="parent"
