@@ -2,22 +2,23 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout_SWA"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SafeWorkAgreement"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".SafeWorkAgreement">
 
     <TextView
         android:id="@+id/textView_Title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Safe Work Agreement Permit"
+        android:text="@string/SWA_Title"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold" />
 
     <LinearLayout
-        android:id="@+id/Header"
+        android:id="@+id/LinearLayout_Header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -25,9 +26,11 @@
         <TextView
             android:id="@+id/textView_SwapNum"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="SWAP #"
+            android:gravity="center"
+            android:text="@string/SWA_textView_swapNum"
+            android:textAlignment="center"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -37,23 +40,23 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="(yyyy/mm/dd 001,001,003, etc)" />
+            android:hint="@string/SWA_editText_swapNum" />
 
     </LinearLayout>
 
     <ScrollView
-        android:id="@+id/FormContents"
+        android:id="@+id/ScrollView_Form"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:id="@+id/FormContainer"
+            android:id="@+id/LinearLayout_FormContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <LinearLayout
-                android:id="@+id/Section0"
+                android:id="@+id/LinearLayout_Section0"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -63,21 +66,23 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:clickable="true"
+                    android:focusable="true"
                     android:paddingTop="16dp"
                     android:paddingBottom="16dp"
-                    android:text="Section 0 - Basic Info"
+                    android:text="@string/SWA_section0Header"
                     android:textAlignment="center"
                     android:textAllCaps="true"
                     android:textSize="24sp"
                     android:textStyle="bold" />
 
                 <LinearLayout
-                    android:id="@+id/Section0Content"
+                    android:id="@+id/LinearLayout_Section0Content"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                     <LinearLayout
+                        android:id="@+id/LinearLayout_Location"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -87,7 +92,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Location/UWI"
+                            android:text="@string/SWA_textView_location"
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
@@ -101,6 +106,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/LinearLayout_Date"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -110,7 +116,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Date"
+                            android:text="@string/SWA_textView_date"
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
@@ -124,6 +130,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/LinearLayout_SiteSupervisor"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -133,7 +140,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Site Supervisor"
+                            android:text="@string/SWA_textView_siteSupervisor"
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
@@ -147,6 +154,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/LinearLayout_CompanyReceiver"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -156,7 +164,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:text="Company Permit Receiver Name"
+                            android:text="@string/SWA_textView_companyReceiver"
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
@@ -170,6 +178,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/LinearLayout_PermitReceiver"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -179,7 +188,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Permit Receiver"
+                            android:text="@string/SWA_textView_receiver"
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
@@ -193,6 +202,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/LinearLayout_Issuer"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -202,7 +212,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Permit Issuer"
+                            android:text="@string/SWA_textView_issuer"
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
@@ -215,13 +225,12 @@
                             android:inputType="textPersonName" />
                     </LinearLayout>
 
-
                 </LinearLayout>
 
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/SectionA"
+                android:id="@+id/LinearLayout_SectionA"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
@@ -231,21 +240,23 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:clickable="true"
+                    android:focusable="true"
                     android:paddingTop="16dp"
                     android:paddingBottom="16dp"
-                    android:text="Section A - Scope"
+                    android:text="@string/SWA_textView_sectionAHeader"
                     android:textAlignment="center"
                     android:textAllCaps="true"
                     android:textSize="24sp"
                     android:textStyle="bold" />
 
                 <LinearLayout
-                    android:id="@+id/SectionAContent"
+                    android:id="@+id/LinearLayout_SectionAContent"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
                     <LinearLayout
+                        android:id="@+id/LinearLayout_Categories"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -255,7 +266,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Categories of Work (More than one may be selected)"
+                            android:text="@string/SWA_textView_categories"
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
@@ -269,14 +280,14 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Explosive/Radioactive" />
+                                android:text="@string/SWA_checkBox_explosive" />
 
                             <CheckBox
                                 android:id="@+id/checkBox_ColdWork"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Cold Work" />
+                                android:text="@string/SWA_checkBox_coldWork" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -290,14 +301,14 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Electrical Work" />
+                                android:text="@string/SWA_checkBox_electrical" />
 
                             <CheckBox
                                 android:id="@+id/checkBox_Pressure"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Pressure Systems" />
+                                android:text="@string/SWA_checkBox_pressure" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -311,14 +322,14 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Working at Heights" />
+                                android:text="@string/SWA_checkBox_heights" />
 
                             <CheckBox
                                 android:id="@+id/checkBox_HotWork"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Hot Work" />
+                                android:text="@string/SWA_checkBox_hotWork" />
                         </LinearLayout>
 
                         <CheckBox
@@ -326,18 +337,20 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Confined/Restricted Space Entry*" />
+                            android:text="@string/SWA_checkBox_confined" />
 
                         <TextView
                             android:id="@+id/textView_ConfinedClarification"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="*The user of a confined spaces entry permit must also use the confined space entry permit supplement" />
+                            android:text="@string/SWA_textView_confinedClarification"
+                            android:textStyle="italic" />
 
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/LinearLayout_Description"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -347,7 +360,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Specific Work Description to be Done"
+                            android:text="@string/SWA_textView_workDescription"
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
@@ -357,11 +370,11 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:ems="10"
-                            android:inputType="textMultiLine"
-                            />
+                            android:inputType="textMultiLine" />
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/LinearLayout_ToolsEquipment"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -371,7 +384,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Tools/Equipment to be Used"
+                            android:text="@string/SWA_textView_toolsEquipment"
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
@@ -385,6 +398,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/LinearLayout_AssociatedDocuments"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -394,12 +408,12 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:text="Associated Documents(List or Attach)"
+                            android:text="@string/SWA_textView_associatedDocuments"
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
                         <EditText
-                            android:id="@+id/editText_CompanyReceiver"
+                            android:id="@+id/editText_AssociatedDocuments"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -408,6 +422,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/LinearLayout_PrecautionsVerifier"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -417,7 +432,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Work Precautions Verifier (Name and Company)"
+                            android:text="@string/SWA_textView_precautionsVerifier"
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
@@ -426,7 +441,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="If not Wellsite Permit Authority, list name/role/company"
+                            android:text="@string/SWA_textView_precautionsVerifierClarifier"
                             android:textSize="14sp"
                             android:textStyle="italic" />
 
@@ -440,6 +455,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/LinearLayout_WPA"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -449,50 +465,77 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Work Party Acceptance"
+                            android:text="@string/SWA_textView_workPartyAcceptance"
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
+
+                        <TextView
+                            android:id="@+id/textView_AcceptanceExplanation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/SWA_textView_acceptanceExplanation" />
+
                         <LinearLayout
+                            android:id="@+id/LinearLayout_Worker"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:orientation="horizontal">
+                            android:orientation="vertical">
 
-                            <EditText
-                                android:layout_width="wrap_content"
+                            <LinearLayout
+                                android:id="@+id/LinearLayout_WorkerInfo"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:ems="10"
-                                android:hint="Name"
-                                android:inputType="textPersonName" />
+                                android:orientation="horizontal">
 
-                            <EditText
-                                android:id="@+id/editText_Time"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:ems="10"
-                                android:hint="Time"
-                                android:inputType="time" />
+                                <EditText
+                                    android:id="@+id/editText_WorkerName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:ems="10"
+                                    android:hint="@string/SWA_editText_workerName"
+                                    android:inputType="textPersonName" />
+
+                                <EditText
+                                    android:id="@+id/editText_Time"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:ems="10"
+                                    android:hint="@string/SWA_editText_time"
+                                    android:inputType="time" />
+
+                                <Button
+                                    android:id="@+id/btn_Sign"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:includeFontPadding="false"
+                                    android:minWidth="0dp"
+                                    android:text="@string/SWA_btn_sign" />
+                            </LinearLayout>
 
                             <Button
                                 android:id="@+id/btn_AddWorker"
-                                android:layout_width="0dp"
-                                android:layout_height="0dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
                                 android:layout_weight="1"
-                                android:text="+" />
+                                android:text="@string/SWA_btn_addRecord" />
                         </LinearLayout>
 
                     </LinearLayout>
 
-
                 </LinearLayout>
-
 
             </LinearLayout>
 
         </LinearLayout>
+
     </ScrollView>
 
 </LinearLayout>
