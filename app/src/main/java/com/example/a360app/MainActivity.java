@@ -14,8 +14,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    //metodo que dispara boton start para que vaya a Login Page
-
     public void goToLogin(View view)
     {
         Intent btnGoLogin = new Intent(this,LoginActivity.class);
