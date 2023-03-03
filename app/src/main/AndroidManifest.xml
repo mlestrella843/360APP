@@ -12,6 +12,9 @@
         android:theme="@style/Theme.360APP"
         tools:targetApi="31">
         <activity
+            android:name=".RecyclerView"
+            android:exported="false" />
+        <activity
             android:name=".GasMonitorBump_form"
             android:exported="false" />
         <activity
