@@ -5,87 +5,211 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_marginBottom="80dp">
+    android:layout_height="match_parent" >
 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="1dp"
+    android:layout_marginEnd="1dp"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <!-- TODO: Update blank fragment layout -->
 
     <LinearLayout
-        android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:orientation="vertical"
-        android:paddingHorizontal="30dp"
-        android:paddingVertical="60dp">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            app:srcCompat="@mipmap/logo" />
+            android:layout_width="97dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="68dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/logo" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
-            android:layout_width="300dp"
+            android:id="@+id/name1"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="1dp"
             android:ems="10"
-            android:hint="Make:"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:text="Make" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
-            android:layout_width="300dp"
+            android:id="@+id/name2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="20dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
             android:ems="10"
-            android:hint="Model:"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:text="Model" />
 
         <EditText
-            android:id="@+id/editTextTextPassword"
-            android:layout_width="300dp"
+            android:id="@+id/name3"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="20dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
             android:ems="10"
-            android:hint="Calibrated By:"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:text="Calibrated by:" />
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress"
-            android:layout_width="300dp"
+            android:id="@+id/name4"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="20dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
             android:ems="10"
-            android:hint="Calibration Gas Type:"
-            android:inputType="textEmailAddress" />
+            android:inputType="textPersonName"
+            android:text="Calibration Gas Type" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName4"
-            android:layout_width="300dp"
+            android:id="@+id/name5"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="20dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
             android:ems="10"
-            android:hint="Serial #:"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:text="Serial" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName5"
-            android:layout_width="300dp"
+            android:id="@+id/name6"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="20dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
             android:ems="10"
-            android:hint="Signature:"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:text="Signature" />
 
-        <Button
-            android:id="@+id/button_Add"
-            android:layout_width="100dp"
-            android:layout_height="52dp"
-            android:onClick="goToPagePrueba"
-            android:text="Add" />
+    <androidx.cardview.widget.CardView
+             android:id="@+id/CardMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            
+          <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:rowCount = "4"
+                android:columnCount="1">
+
+
+<!--              Carta # 1-->
+          <androidx.cardview.widget.CardView
+              android:id="@+id/Card1"
+              android:layout_gravity="fill"
+              android:layout_rowWeight="1"
+              android:layout_columnWeight="1"
+              android:layout_marginBottom="15dp"
+              app:cardBackgroundColor="@color/teal_200"
+              app:cardCornerRadius="10dp">
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Fill Row 1"
+                  android:textSize="20dp"
+                  android:paddingTop="15dp"
+                  android:paddingBottom="15dp"
+                  android:textAlignment="center"
+                  android:layout_gravity="center"/>
+
+          </androidx.cardview.widget.CardView>
+
+<!--Carta # 2-->
+              <androidx.cardview.widget.CardView
+                  android:id="@+id/Card2"
+                  android:layout_gravity="fill"
+                  android:layout_rowWeight="1"
+                  android:layout_columnWeight="1"
+                  android:layout_marginBottom="15dp"
+                  app:cardBackgroundColor="@color/teal_200"
+                  app:cardCornerRadius="10dp">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:paddingTop="15dp"
+                      android:paddingBottom="15dp"
+                      android:text="Fill Row 2"
+                      android:textAlignment="center"
+                      android:textSize="20dp" />
+
+              </androidx.cardview.widget.CardView>
+
+<!--              Carta # 3-->
+              <androidx.cardview.widget.CardView
+                  android:id="@+id/Card3"
+                  android:layout_gravity="fill"
+                  android:layout_rowWeight="1"
+                  app:cardBackgroundColor="@color/teal_200"
+                  android:layout_marginBottom="15dp"
+                  android:layout_columnWeight="1">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:paddingTop="15dp"
+                      android:paddingBottom="15dp"
+                      android:text="Fill Row 3"
+                      android:textAlignment="center"
+                      android:textSize="20dp" />
+
+              </androidx.cardview.widget.CardView>
+
+          </GridLayout>
+            
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginBottom="40dp"
+                android:text="Submit"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:layout_marginBottom="40dp"
+                android:text="Back"
+                app:icon="?attr/actionModeCloseDrawable" />
+        </LinearLayout>
 
     </LinearLayout>
+
+</LinearLayout>
+
+
 
 </ScrollView>
