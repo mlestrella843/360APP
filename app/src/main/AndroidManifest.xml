@@ -21,9 +21,6 @@
             android:name=".Row1_Activity"
             android:exported="false" />
         <activity
-            android:name=".RecyclerView"
-            android:exported="false" />
-        <activity
             android:name=".GasMonitorBump_form"
             android:exported="false" />
         <activity

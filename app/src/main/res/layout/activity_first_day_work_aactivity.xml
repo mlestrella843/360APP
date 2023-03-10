@@ -39,13 +39,13 @@
 
     <Button
         android:id="@+id/btnFieldLevel_FDOS_WA"
-        android:layout_width="405dp"
-        android:layout_height="65dp"
+        android:layout_width="414dp"
+        android:layout_height="76dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="1dp"
         android:layout_marginBottom="1dp"
-        android:backgroundTint="@color/purple_700"
+        android:backgroundTint="@color/secondary_blue"
         android:text="Field Level Hazard Assesment-FLHA"
         app:layout_constraintBottom_toTopOf="@+id/btnGasMonitorBump_FDOS_WA"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,13 +54,13 @@
 
     <Button
         android:id="@+id/btnGasMonitorBump_FDOS_WA"
-        android:layout_width="404dp"
-        android:layout_height="64dp"
+        android:layout_width="407dp"
+        android:layout_height="74dp"
         android:layout_marginStart="3dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="5dp"
-        android:backgroundTint="@color/purple_700"
+        android:backgroundTint="@color/secondary_blue"
         android:onClick="goToGasMonitorForm"
         android:text="Gas Monitor Bump Test"
         app:layout_constraintBottom_toTopOf="@+id/btn_ATV_OHV_Inspection"
@@ -70,16 +70,17 @@
 
     <Button
         android:id="@+id/btn_ATV_OHV_Inspection"
-        android:layout_width="404dp"
-        android:layout_height="64dp"
+        android:layout_width="407dp"
+        android:layout_height="74dp"
         android:layout_marginStart="3dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="40dp"
-        android:backgroundTint="@color/purple_700"
+        android:backgroundTint="@color/secondary_blue"
         android:text="ATV/OHV Inspection"
         app:layout_constraintBottom_toTopOf="@+id/btnBack1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnGasMonitorBump_FDOS_WA" />
 
@@ -92,6 +93,7 @@
         android:layout_marginEnd="161dp"
         android:layout_marginBottom="100dp"
         android:onClick="goBtnGoBackWorkingAloneActivity"
+        android:backgroundTint="@color/secondary_blue"
         android:text="Back"
         app:icon="?attr/actionModeCloseDrawable"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -107,7 +109,8 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="193dp"
         android:layout_marginBottom="10dp"
-        android:text="Forms"
+        android:text="Forms
+"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
