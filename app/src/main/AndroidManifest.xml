@@ -54,6 +54,27 @@
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
+            android:name=".Orientation_Exam2"
+            android:exported="false" />
+        <activity
+            android:name=".Orientation_Exam1"
+            android:exported="false" />
+        <activity
+            android:name=".Orientation_next_next_next"
+            android:exported="false" />
+        <activity
+            android:name=".Orientation_next_next"
+            android:exported="false" />
+        <activity
+            android:name=".Orientation_next"
+            android:exported="false" />
+        <activity
+            android:name=".Orientation"
+            android:exported="false" />
+        <activity
+            android:name=".Orientation_pdf"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

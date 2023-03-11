@@ -13,6 +13,11 @@ public class FirstDay_SupervisingOS_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first_day_supervising_os);
     }
+    public void goToOrientation(View view)
+    {
+        Intent btnGoToOrientation = new Intent(this,Orientation_pdf.class);
+        startActivity(btnGoToOrientation);
+    }
 
     public void goToGasMonitorForm(View view){
         Intent btnGoToGasMonitorTesta = new Intent(this, GasMonitorBump_form.class);
@@ -23,4 +28,6 @@ public class FirstDay_SupervisingOS_Activity extends AppCompatActivity {
         Intent btnGoBackSupervisingActivity = new Intent(this,supervisingOnSiteActivity.class);
         startActivity(btnGoBackSupervisingActivity);
     }
+
+
 }
