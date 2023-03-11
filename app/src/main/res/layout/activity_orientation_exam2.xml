@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Orientation_Exam2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:text="2/6" />
+
+        <TextView
+            android:id="@+id/textView_Q6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:text="6. If spills are on lease and cleaned up right
+away, I do not have to report it." />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1" >
+
+            <RadioButton
+                android:id="@+id/radioBtn_Q6A1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:layout_weight="1"
+                android:text="True" />
+
+            <RadioButton
+                android:id="@+id/radioBtn_Q6A2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:layout_weight="1"
+                android:text="False" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView_Q7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="7. Work around overhead power lines
+must maintain at least a 7 m distance." />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1" >
+
+            <RadioButton
+                android:id="@+id/radioBtn_Q7A1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:layout_weight="1"
+                android:text="True" />
+
+            <RadioButton
+                android:id="@+id/radioBtn_Q7A2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:layout_weight="1"
+                android:text="False" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView_Q8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="8. The H2S 8-hour exposure limit in
+Alberta is 10 ppm, and the Ceiling Limit
+is 15 ppm."
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1" >
+
+            <RadioButton
+                android:id="@+id/radioBtn_Q8A1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:layout_weight="1"
+                android:text="True" />
+
+            <RadioButton
+                android:id="@+id/radioBtn_Q8A2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:layout_weight="1"
+                android:text="False" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView_Q9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="9. Workers are not permitted to work on
+the top two rungs of any portable
+ladder." />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1" >
+
+            <RadioButton
+                android:id="@+id/radioBtn_Q9A1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:layout_weight="1"
+                android:text="True" />
+
+            <RadioButton
+                android:id="@+id/radioBtn_Q9A2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:layout_weight="1"
+                android:text="False" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView_Q10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="10. All workers who are working at heights
+over 3 m must be trained in fall
+protection." />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1" >
+
+            <RadioButton
+                android:id="@+id/radioBtn_Q10A1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:layout_weight="1"
+                android:text="True" />
+
+            <RadioButton
+                android:id="@+id/radioBtn_Q10A2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:layout_weight="1"
+                android:text="False" />
+        </RadioGroup>
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="111dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom|right"
+            android:onClick="goToOrientationFill"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_action_next" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

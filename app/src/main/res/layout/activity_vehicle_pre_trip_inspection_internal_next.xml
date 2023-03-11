@@ -4,19 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
     tools:context=".Vehicle_PreTrip_Inspection_Internal_next">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_margin="10dp"
         android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_Page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="6/9"
+            android:textAlignment="center"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/textView_SOSKit"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:text="SOS Kit"
             android:textSize="28sp"
             android:textStyle="bold" />
@@ -47,7 +57,8 @@
         <EditText
             android:id="@+id/editText_SOSKitComments"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:ems="10"
             android:gravity="start|top"
             android:inputType="textMultiLine"
@@ -56,7 +67,8 @@
         <TextView
             android:id="@+id/textView_FirstAidKit"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:text="First Aid Kit"
             android:textSize="28sp"
             android:textStyle="bold" />
@@ -87,7 +99,8 @@
         <EditText
             android:id="@+id/editText_FirstAidKitComments"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:ems="10"
             android:gravity="start|top"
             android:inputType="textMultiLine"
@@ -96,7 +109,8 @@
         <TextView
             android:id="@+id/textView_SpillKit"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:text="Spill Kit"
             android:textSize="28sp"
             android:textStyle="bold" />
@@ -127,7 +141,8 @@
         <EditText
             android:id="@+id/editText_SpillKitComments"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:ems="10"
             android:gravity="start|top"
             android:inputType="textMultiLine"
@@ -136,7 +151,8 @@
         <TextView
             android:id="@+id/textView_FireExtinguisher"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:text="Fire Extinguisher"
             android:textSize="28sp"
             android:textStyle="bold" />
@@ -167,7 +183,8 @@
         <EditText
             android:id="@+id/editText_FireExtinguisherComments"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:ems="10"
             android:gravity="start|top"
             android:inputType="textMultiLine"
@@ -175,10 +192,9 @@
 
         <ImageButton
             android:id="@+id/imageBtn_Move6"
-            android:layout_width="wrap_content"
+            android:layout_width="111dp"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|right"
-            android:minWidth="111dp"
             android:minHeight="51dp"
             android:src="@drawable/ic_action_next" />
     </LinearLayout>

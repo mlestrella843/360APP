@@ -4,16 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
     tools:context=".Orientation_next">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="start" >
+        android:layout_margin="10dp"
+        android:orientation="vertical">
 
-            <TextView
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:text="4/6" />
+
+        <TextView
                 android:id="@+id/textView_NameLabel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -75,12 +82,12 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editTextNumber"
+            android:id="@+id/editText_360Rep"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="text" />
 
         <TextView
             android:id="@+id/textView_SignatureLabel2"
@@ -124,7 +131,6 @@
             android:layout_gravity="bottom|right"
             android:minWidth="111dp"
             android:onClick="goToOrientationNextNext"
-            android:minHeight="51dp"
             android:src="@drawable/ic_action_next" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

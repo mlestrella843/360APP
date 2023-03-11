@@ -4,110 +4,117 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
     tools:context=".DailyDriverAssessmentNext">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_margin="10dp"
         android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_Page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="8/9"
+            android:textAlignment="center"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/textView_Question6"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:text="Do you have any medical conditions that can lead to blackouts or fainting, vision problems, epilepsy?"
             android:textSize="24sp" />
 
-            <RadioGroup
-                android:id="@+id/radioGroup_Q6"
-                android:layout_width="match_parent"
+        <RadioGroup
+            android:id="@+id/radioGroup_Q6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioBtn_YesQ6"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_weight="1"
+                android:text="YES" />
 
-                <RadioButton
-                    android:id="@+id/radioBtn_YesQ6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="YES" />
-
-                <RadioButton
-                    android:id="@+id/radioBtn_NoQ6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="NO" />
-            </RadioGroup>
-
-
-            <TextView
-                android:id="@+id/textView_Question7"
-                android:layout_width="match_parent"
+            <RadioButton
+                android:id="@+id/radioBtn_NoQ6"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Are you taking any prescription medications which may cause drowsiness?"
-                android:textSize="24sp"
-                android:layout_marginBottom="16dp"/>
+                android:layout_weight="1"
+                android:text="NO" />
+        </RadioGroup>
 
-            <RadioGroup
-                android:layout_width="match_parent"
+
+        <TextView
+            android:id="@+id/textView_Question7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Are you taking any prescription medications which may cause drowsiness?"
+            android:textSize="24sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_weight="1"
+                android:text="YES" />
 
-                <RadioButton
-                    android:id="@+id/radioButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="YES" />
-
-                <RadioButton
-                    android:id="@+id/radioButton2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="NO" />
-
-            </RadioGroup>
-
-            <TextView
-                android:id="@+id/textView_Question8"
-                android:layout_width="match_parent"
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Are you taking any non-prescription medications which may cause drowsiness? i.e.) cold medication,
+                android:layout_weight="1"
+                android:text="NO" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView_Question8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Are you taking any non-prescription medications which may cause drowsiness? i.e.) cold medication,
 allergy medication?"
-                android:textSize="24sp"
-                android:layout_marginBottom="16dp"/>
+            android:textSize="24sp" />
 
-            <RadioGroup
-                android:layout_width="match_parent"
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton5"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_weight="1"
+                android:text="YES" />
 
-                <RadioButton
-                    android:id="@+id/radioButton5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="YES" />
-
-                <RadioButton
-                    android:id="@+id/radioButton6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="NO" />
-            </RadioGroup>
+            <RadioButton
+                android:id="@+id/radioButton6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="NO" />
+        </RadioGroup>
 
         <ImageButton
             android:id="@+id/imgButton7"
-            android:layout_width="wrap_content"
+            android:layout_width="111dp"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|right"
-            android:minWidth="111dp"
             android:minHeight="51dp"
-            android:src="@drawable/ic_action_next"/>
+            android:src="@drawable/ic_action_next" />
 
     </LinearLayout>
 

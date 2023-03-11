@@ -12,6 +12,15 @@
         android:theme="@style/Theme.360APP"
         tools:targetApi="31">
         <activity
+            android:name=".Orientation_Exam2"
+            android:exported="false" />
+        <activity
+            android:name=".Orientation_Exam1"
+            android:exported="false" />
+        <activity
+            android:name=".Orientation_pdf"
+            android:exported="false" />
+        <activity
             android:name=".PreTrip_Inspection_Main"
             android:exported="false" />
         <activity
@@ -83,7 +92,6 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

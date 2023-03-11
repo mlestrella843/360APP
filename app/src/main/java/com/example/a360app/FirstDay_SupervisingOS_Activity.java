@@ -16,7 +16,7 @@ public class FirstDay_SupervisingOS_Activity extends AppCompatActivity {
 
     public void goToOrientation(View view)
     {
-        Intent btnGoToOrientation = new Intent(this,Orientation.class);
+        Intent btnGoToOrientation = new Intent(this,Orientation_pdf.class);
         startActivity(btnGoToOrientation);
     }
 }
