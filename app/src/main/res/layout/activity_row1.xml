@@ -19,7 +19,7 @@
         android:textSize="25dp"
         android:textColor="@color/main_blue"
         android:textStyle="bold"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="80dp"
         app:layout_constraintLeft_toLeftOf = "parent"
         app:layout_constraintRight_toRightOf = "parent"
         app:layout_constraintTop_toTopOf = "parent" />
@@ -29,6 +29,7 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:text="Jan 01 2022"
+        android:layout_marginBottom="30dp"
         android:textColor="@color/main_blue"
         style="?android:spinnerStyle"
         android:backgroundTint="@color/white"
@@ -41,5 +42,96 @@
 
     </Button>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="20dp">
+
+            <TableRow
+                android:background="@color/main_blue">
+                   <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Row1"
+                    android:textColor="@color/white"
+                    android:padding="3dp"
+                    android:textSize="18dp"
+                    android:layout_weight="10"
+                    android:gravity="center_horizontal"/>
+            </TableRow>
+
+            <TableRow
+                android:background="@color/secondary_blue">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/col1"
+                    android:textColor="@color/white"
+                    android:padding="3dp"
+                    android:textSize="18dp"
+                    android:layout_weight="10"
+                    android:gravity="center_horizontal"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/col2"
+                    android:textColor="@color/white"
+                    android:padding="3dp"
+                    android:textSize="18dp"
+                    android:layout_weight="10"
+                    android:gravity="center_horizontal"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/col3"
+                    android:textColor="@color/white"
+                    android:padding="3dp"
+                    android:textSize="18dp"
+                    android:layout_weight="10"
+                    android:gravity="center_horizontal"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/col4"
+                    android:textColor="@color/white"
+                    android:padding="3dp"
+                    android:textSize="18dp"
+                    android:layout_weight="10"
+                    android:gravity="center_horizontal"/>
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/textO2"
+                    android:layout_width="82dp"
+                    android:layout_height="match_parent"/>
+                <EditText
+                    android:id="@+id/textLEL"
+                    android:layout_width="82dp"
+                    android:layout_height="match_parent"/>
+                <EditText
+                    android:id="@+id/textH2S"
+                    android:layout_width="82dp"
+                    android:layout_height="match_parent"/>
+                <EditText
+                    android:id="@+id/Initials"
+                    android:layout_width="82dp"
+                    android:layout_height="match_parent"/>
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
 
 </LinearLayout>

@@ -2,6 +2,14 @@
     <string name="app_name">360APP</string>
     <string name="btnStart">Start</string>
     <string name="btnLogin">Login</string>
+
+    <string name="Row1">Function Test</string>
+    <string name="col1">O2</string>
+    <string name="col2">LEL/CH4</string>
+    <string name="col3">H2S</string>
+    <string name="col4">Initials</string>
+
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
