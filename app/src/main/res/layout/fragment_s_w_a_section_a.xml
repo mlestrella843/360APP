@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SWASectionA">
+
+
+    <TextView
+        android:id="@+id/textView_Scope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="@string/SWA_textView_sectionAHeader"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox_Explosive"
+        app:layout_constraintStart_toEndOf="@+id/checkBox_Explosive"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView_Categories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/SWA_textView_categories"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox_Explosive"
+        app:layout_constraintStart_toEndOf="@+id/checkBox_Explosive"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Scope" />
+
+
+    <CheckBox
+        android:id="@+id/checkBox_Explosive"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/SWA_checkBox_explosive"
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkBox_ColdWork"
+        app:layout_constraintEnd_toStartOf="@+id/checkBox_ColdWork"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox_ColdWork"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/SWA_checkBox_coldWork"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/checkBox_Explosive"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Categories" />
+
+
+    <CheckBox
+        android:id="@+id/checkBox_Electrical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/SWA_checkBox_electrical"
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkBox_Pressure"
+        app:layout_constraintEnd_toStartOf="@+id/checkBox_Pressure"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox_Pressure"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/SWA_checkBox_pressure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/checkBox_Electrical"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_Explosive" />
+
+
+    <CheckBox
+        android:id="@+id/checkBox_Heights"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/SWA_checkBox_heights"
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkBox_HotWork"
+        app:layout_constraintEnd_toStartOf="@+id/checkBox_HotWork"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox_HotWork"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/SWA_checkBox_hotWork"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/checkBox_Heights"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_Electrical" />
+
+
+    <CheckBox
+        android:id="@+id/checkBox_Confined"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/SWA_checkBox_confined"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox_Heights"
+        app:layout_constraintStart_toEndOf="@+id/checkBox_Heights"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_Heights" />
+
+    <TextView
+        android:id="@+id/textView_ConfinedClarification"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/SWA_textView_confinedClarification"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_Confined" />
+
+
+    <TextView
+        android:id="@+id/textView_WorkDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/SWA_textView_workDescription"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_ConfinedClarification" />
+
+    <EditText
+        android:id="@+id/editText_WorkDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_WorkDescription" />
+
+
+    <TextView
+        android:id="@+id/textView_ToolsEquipment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/SWA_textView_toolsEquipment"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_WorkDescription" />
+
+    <EditText
+        android:id="@+id/editText_ToolsEquipment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_ToolsEquipment" />
+
+
+    <TextView
+        android:id="@+id/textView_AssociatedDocuments"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/SWA_textView_associatedDocuments"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_ToolsEquipment" />
+
+    <EditText
+        android:id="@+id/editText_AssociatedDocuments"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_AssociatedDocuments" />
+
+
+    <TextView
+        android:id="@+id/textView_PrecautionsVerifier"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/SWA_textView_precautionsVerifier"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_AssociatedDocuments" />
+
+    <TextView
+        android:id="@+id/textView_PrecautionsVerifierClarifier"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/SWA_textView_precautionsVerifierClarifier"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_PrecautionsVerifier" />
+
+    <EditText
+        android:id="@+id/editText_PrecautionsVerifier"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_PrecautionsVerifierClarifier" />
+
+
+    <TextView
+        android:id="@+id/textView_WorkPartyAcceptance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/SWA_textView_workPartyAcceptance"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_PrecautionsVerifier" />
+
+
+    <TextView
+        android:id="@+id/textView_AcceptanceExplanation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/SWA_textView_acceptanceExplanation"
+        app:layout_constraintStart_toStartOf="@+id/textView_WorkPartyAcceptance"
+        app:layout_constraintTop_toBottomOf="@+id/textView_WorkPartyAcceptance" />
+
+
+    <EditText
+        android:id="@+id/editText_WorkerName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="266dp"
+        android:layout_marginRight="266dp"
+        android:ems="10"
+        android:hint="@string/SWA_editText_workerName"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editText_Time"
+        app:layout_constraintEnd_toStartOf="@+id/btn_Sign"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/SWA_editText_time"
+        android:inputType="time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_AcceptanceExplanation" />
+
+    <Button
+        android:id="@+id/btn_Sign"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:includeFontPadding="false"
+        android:minWidth="0dp"
+        android:text="@string/SWA_btn_sign"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editText_WorkerName"
+        app:layout_constraintTop_toBottomOf="@+id/textView_AcceptanceExplanation" />
+
+
+    <Button
+        android:id="@+id/btn_AddWorker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:text="@string/SWA_btn_addRecord"
+        app:layout_constraintEnd_toEndOf="@+id/btn_Sign"
+        app:layout_constraintTop_toTopOf="@+id/btn_Sign" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
