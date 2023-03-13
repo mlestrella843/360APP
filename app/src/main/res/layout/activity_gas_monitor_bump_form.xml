@@ -39,7 +39,7 @@
             android:layout_marginBottom="1dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Make" />
+            android:hint="Make" />
 
         <EditText
             android:id="@+id/name2"
@@ -49,7 +49,7 @@
             android:layout_marginBottom="1dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Model" />
+            android:hint="Model" />
 
         <EditText
             android:id="@+id/name3"
@@ -59,7 +59,7 @@
             android:layout_marginBottom="1dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Calibrated by:" />
+            android:hint="Calibrated by:" />
 
         <EditText
             android:id="@+id/name4"
@@ -69,7 +69,7 @@
             android:layout_marginBottom="1dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Calibration Gas Type" />
+            android:hint="Calibration Gas Type" />
 
         <EditText
             android:id="@+id/name5"
@@ -79,7 +79,7 @@
             android:layout_marginBottom="1dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Serial" />
+            android:hint="Serial" />
 
         <EditText
             android:id="@+id/name6"
@@ -89,7 +89,7 @@
             android:layout_marginBottom="1dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Signature" />
+            android:hint="Signature" />
 
     <androidx.cardview.widget.CardView
              android:id="@+id/CardMain"
